@@ -27,12 +27,12 @@ public class register extends HttpServlet {
 		if(first_name.isEmpty() || last_name.isEmpty() || username.isEmpty() || 
 				password.isEmpty() || address.isEmpty() || contact.isEmpty())
 		{
-			RequestDispatcher req = request.getRequestDispatcher("register_1.jsp");
+			RequestDispatcher req = request.getRequestDispatcher("Register_1.jsp");
 			req.include(request, response);
 		}
 		else
 		{
-			RequestDispatcher req = request.getRequestDispatcher("register_2.jsp");
+			RequestDispatcher req = request.getRequestDispatcher("Register_2.jsp");
 			req.forward(request, response);
 		}
 	}
